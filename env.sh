@@ -77,3 +77,10 @@ alias envconfig="subl ~/projects/config/env.sh"
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$PROJECT_HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
